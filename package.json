@@ -1,0 +1,35 @@
+{
+  "name": "@markmarkyesyes/node-generator",
+  "version": "0.0.0",
+  "description": "Personal node app generator",
+  "scripts": {
+    "start:local": "npx webpack-dev-server --config webpack-dev.config.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markmarkyesyes/node-generator.git"
+  },
+  "author": "markmarkyesyes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markmarkyesyes/node-generator/issues"
+  },
+  "homepage": "https://github.com/markmarkyesyes/node-generator#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "style-loader": "^1.1.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18"
+  }
+}
