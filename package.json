@@ -4,7 +4,8 @@
   "description": "Personal node app generator",
   "scripts": {
     "start:local": "npx webpack-dev-server --config webpack-dev.config.js --port=5555",
-    "test:unit": "jest --config jest-unit.config.js"
+    "test:unit": "jest --config jest-unit.config.js",
+    "test:integration": "npm run start:local & wait-on http://localhost:5555 && jest --config jest-puppeteer.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,14 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^3.4.0",
     "jest": "^24.9.0",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.0.0",
     "react-test-renderer": "^16.12.0",
     "style-loader": "^1.1.1",
+    "wait-on": "^3.3.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
